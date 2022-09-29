@@ -38,12 +38,15 @@
             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  name="item" value="Timepass">
            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter table number" name="table">
            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Quntity" name="quntity">
-           <input type="submit" class="btn btn-dark btn-lg btn-block" value="ORDER">
+           <input type="submit" class="btn btn-dark btn-lg btn-block" value="ORDER" id="clickbtn">
            </form>
         <!-- foem ends  -->
     </div>
 
     <script>
+      let btn = document.getElementById('clickbtn');
+       btn.style.background = "green";
+       btn.innerHTML = "Order Placed";
          const scriptURL = 'https://script.google.com/macros/s/AKfycbwSB6frCs8Ln4mA5DnyOTH024xaS5K7-iy4k5GTtJuSE49Fege4PqzfJnsOHifRuGci/exec'
             const form = document.forms['order']
           
